@@ -7,12 +7,12 @@ class Hero:
 
     def fight(self,enemy_hp,enemy_power):
 
-        self.hp = self.hp-enemy_power
+        my_hp = self.hp-enemy_power
         enemy_hp = enemy_hp - self.power
 
-        if self.hp > enemy_hp:
+        if my_hp > enemy_hp:
             print(f'{self.name}赢了')
-        elif self.hp < enemy_hp:
+        elif my_hp < enemy_hp:
             print('敌人赢了')
         else:
             print('我们打平了')
